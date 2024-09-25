@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Do I Love More?</title>
+    <!-- Add any CSS or external libraries here -->
+    <style>
+      @keyframes bounce {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+
+        40% {
+          transform: translateY(-20px);
+        }
+
+        60% {
+          transform: translateY(-10px);
+        }
+      }
+
+      .heart {
+        animation: bounce 2s infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Which Do I Love More?</h1>
+    <p>Choose one:</p>
+    <div class="options">
+      <button onclick="handleOption('cars')">Cars</button>
+      <button onclick="handleOption('money')">Money</button>
+      <button onclick="handleOption('food')">food</button>
+      <button onclick="handleOption('you')">You</button>
+    </div>
+    <p id="result"></p>
+    <div class="heart">❤️</div>
+    <img src="https://pixabay.com/photos/hamster-cage-rodent-pet-brown-1646566/" alt="Cute Hamster" width="200">
+    <script>
+      function handleOption(option) {
+        if (option === 'you') {
+          document.getElementById('result').textContent = 'Of course, I love you the most 😍!';
+        } else {
+          document.getElementById('result').textContent = 'not quite as much as you you stupid baby 🤱 !';
+        }
+      }
+    </script>
+  </body>
+</html
